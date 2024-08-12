@@ -22,8 +22,6 @@ const UploadRoute = require('./routes/uploadRoute');
 
 const PORT = process.env.PORT || 4000;
 
-
-
 dbConnect();
 
 app.use(bodyParser.json());
@@ -51,6 +49,7 @@ app.use(errorHandler);
 // app.use('/', (req,res)=>{
 //     res.send('Hello from server side');
 // });testing
+// 
 
 app.listen(PORT,()=>{
     console.log(`Server is running at PORT ${PORT}`);
